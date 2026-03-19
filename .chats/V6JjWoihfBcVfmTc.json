@@ -1,0 +1,38 @@
+{
+  "id": "V6JjWoihfBcVfmTc",
+  "messages": [
+    {
+      "parts": [
+        {
+          "type": "text",
+          "text": "你好"
+        }
+      ],
+      "id": "iV4UvEfo0Nnsin7e",
+      "role": "user",
+      "metadata": {
+        "createdAt": 1773899300634
+      }
+    },
+    {
+      "id": "cGhkYvdoozUxYjsu",
+      "metadata": {
+        "createdAt": 1773899301855
+      },
+      "role": "assistant",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "你好！很高兴见到你！😊 我是DeepSeek，由深度求索公司创造的AI助手。无论你有什么问题、需要什么帮助，或者只是想聊聊天，我都很乐意为你提供支持！\n\n我可以帮你解答各种问题，协助处理文档，进行创作和分析等等。有什么我可以为你做的吗？请随时告诉我！✨",
+          "state": "done"
+        }
+      ]
+    }
+  ],
+  "createdAt": 1773899301785,
+  "activeStreamId": null,
+  "canceledAt": null
+}

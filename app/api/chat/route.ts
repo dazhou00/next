@@ -4,6 +4,7 @@ import { convertToModelMessages, generateId, streamText } from "ai";
 import { after } from "next/server";
 import { createResumableStreamContext } from "resumable-stream";
 import throttle from "throttleit";
+import { deepseek } from "@ai-sdk/deepseek";
 
 export async function POST(req: Request) {
   const {
@@ -51,7 +52,7 @@ export async function POST(req: Request) {
   const userStopSignal = new AbortController();
 
   const result = streamText({
-    model: "openai/gpt-5-mini",
+    model: deepseek("deepseek-chat"),
     messages: await convertToModelMessages(messages),
     abortSignal: userStopSignal.signal,
     // throttle reading from chat store to max once per second
